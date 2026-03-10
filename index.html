@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Industrial Service</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<!-- TOPBAR (siempre visible) -->
+<div class="topbar">
+    <div class="topbar-logo">
+        <img src="./img/logo.png" alt="Logo empresa">
+    </div>
+   
+    
+    <!-- Botón hamburguesa (visible solo en móvil/tablet) -->
+    <button class="hamburger" id="hamburgerBtn">
+        <i class="fas fa-bars"></i>
+    </button>
+    
+    <!-- Elementos que irán al menú hamburguesa en móvil -->
+    <div class="topbar-social desktop-only">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    
+    <div class="topbar-menu desktop-only">
+        <a href="#"><i class="fas fa-map-marker-alt"></i> Ubicación</a>
+        <a href="#"><i class="fas fa-globe"></i> Idioma</a>
+    </div>
+    
+    <div class="topbar-search desktop-only">
+        <input type="text" placeholder="Buscar">
+        <button><i class="fas fa-search"></i></button>
+    </div>
+    
+</div>
+
+<nav class="ocultar">
+    <!-- Menú principal -->
+    <ul>
+        <li><a href="#">PRODUCTOS</a></li>
+        <li><a href="#">SERVICIOS</a></li>
+        <li><a href="#">RECURSOS</a></li>
+        <li><a href="#">CONTACTO</a></li>
+        <li><a href="#">COTIZAR</a></li>
+    </ul>
+</nav>
+
+<!-- MENÚ PRINCIPAL + ELEMENTOS MÓVIL -->
+<nav class="mobile-menu" id="mobileMenu">
+    <!-- Elementos que se moverán al menú hamburguesa -->
+    <div class="mobile-menu-header">
+        <button class="close-menu" id="closeMenuBtn">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+     <!-- Ubicación e idioma en móvil -->
+    <div class="mobile-links">
+        <a href="#"><i class="fas fa-map-marker-alt"></i> Ubicación</a>
+        <a href="#"><i class="fas fa-globe"></i> Idioma</a>
+    </div>
+    
+    <!-- Redes sociales en móvil -->
+    <div class="mobile-social">
+        <a href="#"><i class="fab fa-instagram" id="ins"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    
+    <!--Esta oculto el buscador en movil
+    
+    <-- Buscador en móvil ->
+    <div class="mobile-search">
+        <input type="text" placeholder="Buscar productos...">
+        <button><i class="fas fa-search"></i></button>
+    </div>
+    -->
+
+    <!-- Menú movil -->
+    <ul class="textomenumovil">
+        <li><a href="#">PRODUCTOS</a></li>
+        <li><a href="#">SERVICIOS</a></li>
+        <li><a href="#">RECURSOS</a></li>
+        <li><a href="#">CONTACTO</a></li>
+        <li><a href="#">COTIZAR</a></li>
+    </ul>
+    
+    
+    
+    
+   
+</nav>
+
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-text">
+
+<p>Electrodos diseñados para ofrecer máxima resistencia y estabilidad.</p>
+
+<img src="./img/swa.png">
+
+<p>Electrodos diseñados para ofrecer máxima resistencia y estabilidad.</p>
+
+<button>Más Info</button>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about">
+
+<div class="container">
+
+<h2>Quiénes Somos</h2>
+
+<p>
+Empresa dedicada a la venta de equipos y materiales de soldadura,
+incluyendo máquinas, artículos especializados y soluciones industriales.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- PRODUCTOS -->
+
+<section class="productos">
+
+<h2>Nuestros Productos y Servicios</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="./img/aa.png">
+<h3>Electrodos</h3>
+<button>Ver detalles</button>
+</div>
+
+<div class="card">
+<img src="./img/aa.png">
+<h3>Alambres</h3>
+<button>Ver detalles</button>
+</div>
+
+<div class="card">
+<img src="./img/aa.png">
+<h3>Máquinas de soldar</h3>
+<button>Ver detalles</button>
+</div>
+
+<div class="card">
+<img src="./img/aa.png">
+<h3>Proyectos</h3>
+<button>Ver detalles</button>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- MARCAS -->
+
+<section class="marcas">
+
+<h2>Principales Marcas</h2>
+
+<div class="logos">
+
+    <img src="./img/aa.png" alt="">
+    <img src="./img/aa.png" alt="">
+    <img src="./img/aa.png" alt="">
+    <img src="./img/aa.png" alt="">
+    <img src="./img/aa.png" alt="">
+    <img src="./img/aa.png" alt="">
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<div class="footer-grid">
+
+<div class="footer-col" id="col">
+
+<img src="./img/logo.png" class="footer-logo">
+
+</div>
+
+
+
+
+
+<div class="footer-col">
+
+<h4>Contacto</h4>
+
+<p>Santo Domingo</p>
+<p>+1 809 000 0000</p>
+<p>info@email.com</p>
+
+</div>
+
+
+<div class="footer-col">
+
+<h4>Redes</h4>
+
+<div class="footer-social">
+
+<a href="#"><i class="fab fa-facebook"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<p>© 2026 Industrial Service</p>
+
+</div>
+
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeMenuBtn = document.getElementById('closeMenuBtn');
+    
+    // Crear overlay
+    const overlay = document.createElement('div');
+    overlay.className = 'menu-overlay';
+    document.body.appendChild(overlay);
+    
+    // Función para abrir menú
+    function openMenu() {
+        mobileMenu.classList.add('active');
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Evitar scroll
+    }
+    
+    // Función para cerrar menú
+    function closeMenu() {
+        mobileMenu.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = ''; // Restaurar scroll
+    }
+    
+    // Event listeners
+    hamburgerBtn.addEventListener('click', openMenu);
+    closeMenuBtn.addEventListener('click', closeMenu);
+    overlay.addEventListener('click', closeMenu);
+    
+    // Cerrar menú al hacer clic en un enlace
+    const menuLinks = mobileMenu.querySelectorAll('a');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', closeMenu);
+    });
+    
+    // Cerrar menú al redimensionar a desktop
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 992) {
+            closeMenu();
+        }
+    });
+});
+</script>
+
+
+</body>
+</html>
