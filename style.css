@@ -132,7 +132,7 @@ background:#014810;
 color:white;
 text-align:center;
 padding:60px 0;
-margin-top: 10px;
+margin-top: 20px;
 }
 
 /* PRODUCTOS */
@@ -144,7 +144,7 @@ text-align:center;
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+grid-template-columns:repeat(4,1fr);
 gap:30px;
 margin-top:40px;
 }
@@ -152,12 +152,13 @@ margin-top:40px;
 .card{
 background:white;
 padding:20px;
-border:1px solid #ddd;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
 .card img{
 width:100%;
-height:150px;
+height:100px;
 object-fit:cover;
 }
 
@@ -168,6 +169,7 @@ color:white;
 border:none;
 padding:10px 20px;
 border-radius:20px;
+cursor:pointer;
 }
 
 /* MARCAS */
@@ -470,6 +472,7 @@ grid-template-columns:1fr;
         align-items: center;
         padding: 10px 5%;
         flex-direction: row;
+        justify-content: space-around;
     }
     
     .topbar-logo img {
@@ -511,6 +514,16 @@ gap:15px;
 max-width:100%;
 }
 
+/* Nuestros Productos y Servicios */
+.grid{
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.card img{
+width:100%;
+}
+
 }
 /* fin marcas */
 
@@ -520,5 +533,6 @@ max-width:100%;
     list-style: none;
     flex-wrap: wrap;
     flex-direction: column;
+    padding: 0px;
 }
 
