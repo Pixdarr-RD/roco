@@ -20,7 +20,9 @@
 <!-- TOPBAR (siempre visible) -->
 <div class="topbar">
     <div class="topbar-logo">
+        <a href="index.html">
         <img src="./img/logo.png" alt="Logo empresa">
+        </a>
     </div>
    
     
@@ -36,11 +38,45 @@
         <a href="#"><i class="fab fa-whatsapp"></i></a>
     </div>
     
-    <div class="topbar-menu desktop-only">
-        <a href="#"><i class="fas fa-map-marker-alt"></i> Ubicación</a>
-        <a href="#"><i class="fas fa-globe"></i> Idioma</a>
-    </div>
-    
+<div class="topbar-menu desktop-only">
+
+<a href="#"><i class="fas fa-map-marker-alt"></i> Ubicación</a>
+
+<div class="idioma-dropdown">
+
+<a href="#" id="idiomaBtn"><i class="fas fa-globe"></i> Idioma</a>
+
+<div class="idioma-menu" id="idiomaMenu">
+
+<a href="#" onclick="traducir('es')">
+<img src="./img/banderas/do.png" class="flag"> Español
+</a>
+
+<a href="#" onclick="traducir('en')">
+<img src="./img/banderas/us.png" class="flag"> English
+</a>
+
+<a href="#" onclick="traducir('fr')">
+<img src="./img/banderas/fr.png" class="flag"> Français
+</a>
+
+<a href="#" onclick="traducir('de')">
+<img src="./img/banderas/de.png" class="flag"> Deutsch
+</a>
+
+<a href="#" onclick="traducir('it')">
+<img src="./img/banderas/it.png" class="flag"> Italiano
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="multidioma"></div>
+
+    <!--buscador-->
     <div class="topbar-search desktop-only">
         <input type="text" placeholder="Buscar">
         <button><i class="fas fa-search"></i></button>
@@ -298,6 +334,44 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+
+
+<!--IDIOMAS-->
+<script>
+window.gtranslateSettings = {
+  default_language: "es",
+  languages: ["es","en","fr","de","it"],
+  wrapper_selector: ".multidioma"
+}
+</script>
+
+<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+
+<!--otro-->
+<script>
+
+// abrir menú
+const btn = document.getElementById("idiomaBtn");
+const menu = document.getElementById("idiomaMenu");
+
+btn.addEventListener("click", function(e){
+  e.preventDefault();
+  menu.style.display = menu.style.display === "block" ? "none" : "block";
+});
+
+
+// traducir
+function traducir(lang){
+
+document.cookie = "googtrans=/es/" + lang + ";path=/";
+document.cookie = "googtrans=/es/" + lang + ";domain=" + location.hostname + ";path=/";
+
+location.reload();
+
+}
+
+</script>
+<!--Fin IDIOMAS-->
 
 
 </body>
