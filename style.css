@@ -536,3 +536,91 @@ width:100%;
     padding: 0px;
 }
 
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background: #014810; /* tu color principal */
+}
+
+/* opcional sombra cuando se pega */
+header {
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+header{
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background: white;
+}
+
+/* para que el menú no se rompa */
+.topbar{
+  background: white;
+}
+
+/* menú principal */
+nav.ocultar{
+  background: #014810;
+}
+
+/*Idiomas */
+.multidioma{
+  display:none;
+  position:absolute;
+  background:white;
+  padding:10px;
+  border-radius:6px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.idioma-dropdown{
+position:relative;
+display:inline-block;
+}
+
+.idioma-menu{
+display:none;
+position:absolute;
+top:100%;
+right:0;
+background:#fff;
+min-width:160px;
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+border-radius:6px;
+overflow:hidden;
+}
+
+.idioma-menu a{
+display:block;
+padding:10px;
+text-decoration:none;
+color:#333;
+}
+
+.idioma-menu a:hover{
+background:#f3f3f3;
+}
+
+.idioma-dropdown:hover .idioma-menu{
+display:block;
+}
+
+.flag{
+width:18px;
+height:12px;
+margin-right:8px;
+vertical-align:middle;
+border-radius:2px;
+}
+
+.idioma-menu a{
+display:flex;
+align-items:center;
+gap:8px;
+padding:10px;
+text-decoration:none;
+color:#333;
+}
